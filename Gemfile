@@ -39,7 +39,7 @@ gem 'aws-sdk', '~> 2'
 gem "will_paginate", '~>3.0.5'
 gem 'dalli', "~> 2.6.4"
 gem "memcachier", "~> 0.0.2"
-gem 'kgio', "~>2.9.2"
+#gem 'kgio', "~>2.9.2"
 gem 'thinking-sphinx', '~> 3.1.1'
 gem 'flying-sphinx', "~>1.2.0"
 # Use patched v2.0.2
@@ -195,3 +195,7 @@ gem 'gon', '~> 5.1.2'
 # aahmed: using braintree for new payment gateway
 gem 'braintree', '~> 2.33.1'
 gem 'braintree-rails', :github => "lyang/braintree-rails", :branch => 'master'
+platforms :ruby do 
+  gem 'unicorn'
+end
+gem 'tzinfo-data'
