@@ -593,7 +593,7 @@ class Person < ActiveRecord::Base
         false
       end
     else
-      #super
+      super
     end
   end
 
@@ -602,7 +602,7 @@ class Person < ActiveRecord::Base
   def password=(*args)
     self.legacy_encrypted_password = nil
     self.password_salt = nil
-   # super
+    super
   end
 
   # def is_buyer?
