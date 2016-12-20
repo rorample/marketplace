@@ -26,8 +26,13 @@ gem 'heroku' # install the Heroku toolbelt (https://toolbelt.heroku.com/) instea
 # gem "passenger", "~> 5.0.18"
 gem 'puma'
 gem 'puma-heroku'
-
-gem "mysql2", "~> 0.4.4"
+group :production do
+  gem 'pg'
+end
+group :development do
+  gem "mysql2", "~> 0.4.4"
+end
+#gem "mysql2", "~> 0.4.4"
 gem 'haml', "~> 4.0.5"
 gem 'sass', "  ~> 3.2.9"
 gem 'rest-client', '~> 1.8.0'
